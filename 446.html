@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="printInfo()">window 객체 속성</button>
+    <script>
+        function printInfo(){
+            document.write(`웹 브라우저의 너비: ${window.innerWidth}`);
+            document.write(`웹 브라우저의 높이: ${window.innerHeight}`);
+            document.write(`웹 브라우저 창의 너비: ${window.outerWidth}`);
+            document.write(`웹 브라우저 창의 높이: ${window.outerHeight}`);
+            document.write(`웹 브라우저 창 위쪽 면과 모니터 사이의 간격: ${window.screenTop}/${window.screenY}`);
+            document.write(`웹 브라우저 창 왼쪽 면과 모니터 사이의 간격: ${window.screenLeft}/${window.screenX}`);
+            document.write(`웹 브라우저 창의 스크롤 가로 위치: ${window.scrollX}`);
+            document.write(`웹 브라우저 창의 스크롤 세로 위치: ${window.scrollY}`);
+        }
+    </script>
+</body>
+</html>
